@@ -2,26 +2,10 @@
     "nodeFunctionsConfig": {
         "maxDuration": 120
     },
-    "rules": [
+    "rewrites": [
     {
-      "id": "redirect-root-to-zh",
-      "description": "重定向根路径到 /zh",
-      "phase": "redirect",
-      "match": {
-        "uri": {
-          "operator": "exact",
-          "operand": "/"
-        }
-      },
-      "actions": [
-        {
-          "type": "redirect",
-          "parameters": {
-            "uri": "/zh",
-            "status": 301
-          }
-        }
-      ]
+      "source": "/",
+      "destination": "/zh"
     }
   ]
 }
